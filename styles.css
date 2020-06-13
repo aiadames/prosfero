@@ -45,42 +45,7 @@ body {
 }
 
 
-#rectangle {
-    position: absolute;
-width: 308px;
-height: 294px;
 
-background: #90AA86;
-
-border: 70px solid #44223F;
-}
-
-#search-text {
-    position: absolute;
-width: 209px;
-height: 82px;
-
-font-family: Comfortaa;
-font-style: normal;
-font-weight: normal;
-font-size: 42px;
-line-height: 40px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #F7F3F7;
-}
-
-
-
-#inner-rectangle {
-    position: absolute;
-width: 308px;
-height: 212px;
-
-background: #F7F3F7;
-}
 
 
 
