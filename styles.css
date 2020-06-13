@@ -36,7 +36,7 @@ h3{
     height: 92px;
     left: 0px;
     top: 0px;
-
+    z-index: 2;
     background: #44223F;
 }
 
@@ -46,7 +46,8 @@ h3{
     height: 83px;
     left: 481px;
     top: 9px;
-
+    z-index: 3;
+    
     font-family: ComfortaaRegular;
     font-style: normal;
     font-weight: normal;
@@ -180,3 +181,35 @@ h3{
 
 
   
+
+
+.container1 {
+    max-height: 100vh;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(3rem);
+    scroll-snap-type: y mandatory;
+}
+lii {
+    border-bottom: 1px solid rgb(194, 35, 35);
+    padding: 30%;
+    font-size: 1.2rem;
+    color: rgb(42, 52, 187);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+
+
+.header {
+    width: 100%;
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
