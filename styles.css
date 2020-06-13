@@ -1,4 +1,17 @@
 /* Selection */
+@font-face {
+    font-family: ComfortaaBold;
+    src: url(Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family: ComfortaaLight;
+    src: url(Comfortaa-Light.ttf);
+}
+@font-face {
+    font-family: ComfortaaRegular;
+    src: url(Comfortaa-Regular.ttf);
+}
+
 
 body {
     background: #F7F3F7;
@@ -21,7 +34,7 @@ body {
     left: 481px;
     top: 9px;
 
-    font-family: Comfortaa;
+    font-family: ComfortaaRegular;
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
