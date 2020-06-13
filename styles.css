@@ -4,7 +4,7 @@ body {
     background: #F7F3F7;
 }
 
-head-bar {
+#head-bar {
     position: absolute;
     width: 1440px;
     height: 92px;
