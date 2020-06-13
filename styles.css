@@ -1,0 +1,32 @@
+/* Selection */
+
+body {
+    background: #F7F3F7;
+}
+
+head-bar {
+    position: absolute;
+    width: 1440px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+
+    background: #44223F;
+}
+
+#head-bar-name {
+    position: absolute;
+    width: 509px;
+    height: 83px;
+    left: 481px;
+    top: 9px;
+
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 71px;
+    text-align: center;
+
+    color: #F7F3F7;
+}
