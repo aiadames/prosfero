@@ -8,14 +8,98 @@
 
 
 
+<style>
+.button {
 
 
+  background-color: #44223F;
+  border: none;
+  color: #F7F3F7;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 
+  font-family: ComfortaaRegular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 71px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #F7F3F7; 
+  color: #44223F; 
+  border: 10px solid #44223F;
+}
+
+.button1:hover {
+  background-color: #F7F3F7;
+  color: #F7F3F7;
+}
+
+#rectangle {
+    position: absolute;
+width: 308px;
+height: 294px;
+
+background: #90AA86;
+
+border: 70px solid #44223F;
+}
+
+#search-text {
+    position: absolute;
+width: 209px;
+height: 82px;
+
+font-family: ComfortaaRegular;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #F7F3F7;
+}
+
+#inner-rectangle {
+    position: absolute;
+width: 308px;
+height: 212px;
+
+background: #F7F3F7;
+}
+
+#inner-rectangle:hover {
+  background-color: #44223F;
+  color: #44223F;
+	cursor:pointer;
+}
+
+
+</style>
 </head>
+<body>
+<h2></h2>
+<div style = "position:absolute; margin-left: 33.5%; top:150px;"><a href="about.html"  class="button button1">About Prosfero</a></div>
+<div style = "position:absolute; top:350px; left:10%"; transform: translate(-50%, -50%);> <div id= "rectangle"></div></div>
+<div style = "position:absolute; top:350px; left:60%;"; transform: translate(-50%, -50%);> <div id= "rectangle"></div></div>
 
-<body> 
+<div style = "position:absolute; top: 630px;left: 18.5%;".<div id= "search-text">search by artist</div></div>
+<div style = "position:absolute; top: 630px;left: 68.5%;".<div id= "search-text">search by charity</div></div>
 
-
+<div style = "position:absolute; top:420px; left:14.88%"; transform: translate(-50%, -50%);> <div id= "inner-rectangle" onClick="location.href='searchartist.html'"></div></div>
+<div style = "position:absolute; top:420px; left:64.88%"; transform: translate(-50%, -50%);> <div id= "inner-rectangle"></div></div>
 
 
 </body>
