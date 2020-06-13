@@ -44,6 +44,32 @@ body {
     color: #F7F3F7;
 }
 
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 150px;
+    height: 76px;
+    padding-top: 0;
+}
+
+
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 70px;
+    height: 5px;
+    background-color: #F7F3F7;
+    margin: 20px 0;
+    transition: 0.4s;
+  }
+  
+
+
 
 
 
