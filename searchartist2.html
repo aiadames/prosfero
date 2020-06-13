@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
+
+</script>
+</head>
+<body>
+
+<h1>A Web Page</h1>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="writeUserData(hi,hi1,hi2,hi3)">Try it</button>
+
+
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCzN_IL2SDfJr1Am5Naex28yRQjV1VQE2s",
+    authDomain: "prosfero-a1fa0.firebaseapp.com",
+    databaseURL: "https://prosfero-a1fa0.firebaseio.com",
+    projectId: "prosfero-a1fa0",
+    storageBucket: "prosfero-a1fa0.appspot.com",
+    messagingSenderId: "410741800740",
+    appId: "1:410741800740:web:194de9bac3da814ebb3db1",
+    measurementId: "G-9C482J5F13"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script>
+  // Set the configuration for your app
+  // TODO: Replace with your project's config object
+  var config = {
+    apiKey: "AIzaSyCzN_IL2SDfJr1Am5Naex28yRQjV1VQE2s",
+    authDomain: "prosfero-a1fa0.firebaseapp.com",
+    databaseURL: "https://prosfero-a1fa0.firebaseio.com",
+    storageBucket: "prosfero-a1fa0.appspot.com"
+  };
+  firebase.initializeApp(config);
+
+  // Get a reference to the database service
+  var database = firebase.database();
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(function() {
+
+var config = {
+    apiKey: "AIzaSyCzN_IL2SDfJr1Am5Naex28yRQjV1VQE2s",
+    authDomain: "prosfero-a1fa0.firebaseapp.com",
+    databaseURL: "https://prosfero-a1fa0.firebaseio.com",
+    storageBucket: "prosfero-a1fa0.appspot.com"
+};
+firebase.initializeApp(config);
+
+// Get a reference to the database service
+var database = firebase.database();
+
+
+const preObject = document.getElementById('object');
+
+// create reference
+const dbRefObject = firebase.database().ref().child('object');
+
+// sync object changes
+dbRefObject.on('value', snap => console.log(snap.val()));
+
+
+
+
+}());
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>	
+    
+	<script>
+	 // Set the configuration for your app
+	// TODO: Replace with your project's config object
+	var config = {
+		apiKey: "AIzaSyCzN_IL2SDfJr1Am5Naex28yRQjV1VQE2s",
+		authDomain: "prosfero-a1fa0.firebaseapp.com",
+		databaseURL: "https://prosfero-a1fa0.firebaseio.com",
+		storageBucket: "prosfero-a1fa0.appspot.com"
+	};
+	firebase.initializeApp(config);
+
+	// Get a reference to the database service
+	var database = firebase.database();
+	</script>
