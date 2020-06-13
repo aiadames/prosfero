@@ -44,13 +44,6 @@ body {
     color: #F7F3F7;
 }
 
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 150px;
-    height: 76px;
-    padding-top: 0;
-}
-
 
 
 
@@ -64,10 +57,12 @@ body {
     width: 70px;
     height: 5px;
     background-color: #F7F3F7;
-    margin: 20px 0;
+    margin: 20px 9px;
     transition: 0.4s;
   }
   
+
+
 
 
 
@@ -105,3 +100,82 @@ body {
 
 
 
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+  .navbar .login-container {
+    float: right;
+  }
+  .navbar input[type=text],
+  .navbar input[type=password] {
+    padding: 6px;
+    margin-top: 20px;
+    font-size: 17px;
+    border: none;
+    width: 120px;
+  }
+  .navbar .login-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 0px;
+    margin-right: 16px;
+    background-color: #F7F3F7;
+    color: F7#F3F7;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 600px) {
+    .navbar .login-container {
+      float: none;
+    }
+    .navbar-nav a,
+    .topnav input[type=text],
+    .navbar .login-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 0px;
+    }
+    .navbar input[type=text] {
+      border: 1px solid #F7F3F7;
+    }
+  }
+
+
+
+
+
+
+
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 5px;
+    color: #F7F3F7;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
