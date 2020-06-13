@@ -7,7 +7,30 @@
 	<div id= "head-bar"></div>
 	<div id= "head-bar-name">p r o s f é r o</div>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+	$(document).scroll(function () {
+		var y = $(this).scrollTop();
+		if (y < 400) {
+			$('.bottomMenu').fadeIn();
+		} else {
+			$('.bottomMenu').fadeOut();
+		}
+
+	});
+	</script>
+
 <style>
+
+body, html {
+    background: #F7F3F7;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
 .button {
 
 
@@ -41,7 +64,7 @@
 
 .button1:hover {
   background-color: #F7F3F7;
-  color: #F7F3F7;
+  color: #F5F0F5;
 }
 
 #rectangle {
@@ -82,7 +105,22 @@ background: #F7F3F7;
 #inner-rectangle:hover {
   background-color: #44223F;
   color: #44223F;
-	cursor:pointer;
+  cursor:pointer;
+}
+
+body {
+    height:1600px;
+}
+.bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1000px;
+    border-top: 1px solid #000;
+    z-index: 1;
+	background-image: url('images/blm_background3.jpg');
+  	background-size: cover;
 }
 
 
@@ -91,19 +129,32 @@ background: #F7F3F7;
 <body>
 
 
-<h2></h2>
-<div style = "position:absolute; margin-left: 33.5%; top:150px;"><a href="about.html"  class="button button1">About Prosfero</a></div>
-<div style = "position:absolute; top:350px; left:10%";> <div id= "rectangle"></div></div>
-<div style = "position:absolute; top:350px; left:60%;";> <div id= "rectangle"></div></div>
-
-<div style = "position:absolute; top: 630px;left: 18.5%;".<div id= "search-text">search by artist</div></div>
-<div style = "position:absolute; top: 630px;left: 68.5%;".<div id= "search-text">search by charity</div></div>
-
-<div style = "position:absolute; top:420px; left:14.87%";> <div id= "inner-rectangle" onClick="location.href='searchartist.html'"></div></div>
-<div style = "position:absolute; top:420px; left:64.87%";> <div id= "inner-rectangle" onClick="location.href='searchcharity.html'"></div></div>
 
 
-<pre id='data'></pre>
+
+<div style = "position:absolute; margin-left: 33.5%; top:150px; z-index:2;"><a href="about.html"  class="button button1">About Prosfero</a></div>
+
+
+<div style = "position:fixed; top:350px; left:10%;";> <div id= "rectangle"></div></div>
+<div style = "position:fixed; top:350px; left:60%;";> <div id= "rectangle"></div></div>
+
+<div style = "position:fixed; top: 630px;left: 18.5%;".<div id= "search-text">search by artist</div></div>
+<div style = "position:fixed; top: 630px;left: 68.5%;".<div id= "search-text">search by charity</div></div>
+
+<div style = "position:fixed; top:420px; left:14.87%";> <div id= "inner-rectangle" onClick="location.href='searchartist.html'"></div></div>
+<div style = "position:fixed; top:420px; left:64.87%";> <div id= "inner-rectangle" onClick="location.href='searchcharity.html'"></div></div>
+
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<div class="bottomMenu">
+
+</div>
+
 
 
 </body>
