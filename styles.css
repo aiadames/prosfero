@@ -127,7 +127,7 @@ h3{
     padding: 6px 10px;
     margin-top: 0px;
     margin-right: 16px;
-    background-color: #F7F3F7;
+    background-color: #EDEAE5;
     color: F7#F3F7;
     font-size: 17px;
     border: none;
@@ -148,7 +148,7 @@ h3{
       padding: 0px;
     }
     .navbar input[type=text] {
-      border: 1px solid #F7F3F7;
+      border: 1px solid #EDEAE5;
     }
   }
 
