@@ -38,7 +38,7 @@ var submitCommission = function () {
 
 
 // Reference to the recommendations object in your Firebase database
-var commissions = firebase.database().ref("artists");
+var arts = firebase.database().ref("artists");
 
 // Save a new recommendation to the database, using the input in the form
 var submitArtist = function () {
@@ -52,7 +52,7 @@ var submitArtist = function () {
   var amedium = $("input[name='artistMedium']:checked").val();
 
   // Push a new recommendation to the database using those values
-  commissions.push({
+  arts.push({
     "artistName": name,
     "artistLink": link,
     "artistEmail": email,
