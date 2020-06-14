@@ -58,14 +58,14 @@
                         var link= data.val().artistLink;
                         var email = data.val().artistEmail;
                         var donationRequired = data.val().donationRequired;
-                        var charities= data.val().artistCharities;
+                        var charity= data.val().artistCharity;
                         var medium = data.val().artistMedium;
                         content += '<tr' + ' onclick="displayIframe(\''+link+'\')"' + '>';
                         content += '<td>' + artist + '</td>'; //column1
                         content += '<td>' + link + '</td>';//column2
                         content += '<td>' + email + '</td>';//column3
                         content += '<td>' + '$'+ donationRequired + '</td>';//column4
-                        content += '<td>' + charities + '</td>';//column5
+                        content += '<td>' + charity + '</td>';//column5
                         content += '<td>' + medium + '</td>';//column6
                         content += '</tr>';
                     });
