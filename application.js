@@ -29,7 +29,7 @@ var submitCommission = function () {
   // Push a new recommendation to the database using those values
   commissions.push({
     "artist": name,
-    "donation-amount": donation,
+    "donationAmount": donation,
     "link": note
   });
 };
