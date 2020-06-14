@@ -34,6 +34,30 @@ var submitCommission = function () {
   });
 };
 
+// Reference to the recommendations object in your Firebase database
+var artists = firebase.database().ref("artists");
+
+// Save a new recommendation to the database, using the input in the form
+var submitArtist = function () {
+
+  // Get input values from each of the form elements
+  var aname = $("#artistName").val();
+  var alink = $("#artistLink").val();
+  var aemail = $("#artistEmail").val();
+  var donationrequired = $("#donationRequired").val();
+  var acharities = $("#artistCharities").val();
+  var amedium = $("#artistMedium").val();
+
+  // Push a new recommendation to the database using those values
+  artists.push({
+    "artistName": aname,
+    "artistLink": alink,
+    "artistEmail": aemail,
+    "donationRequired": donationrequired,
+    "artistCharities": acharities,
+    "artistMedium": amedium
+  });
+};
 
 
 // Get the single most recent recommendation from the database and
@@ -66,5 +90,6 @@ $(window).load(function () {
   // Find the HTML element with the id recommendationForm, and when the submit
   // event is triggered on that element, call submitRecommendation.
   $("#commissionForm").submit(submitCommission);
+  $("#artistForm").submit(submitArtist);
 
 });
