@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+  
+  <title>Search By Artist</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" href="styles.css">
-	<div id= "head-bar"></div>
-	<div id= "head-bar-name">p r o s f é r o</div>
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 	$(document).scroll(function () {
@@ -23,7 +27,7 @@
 <style>
 
 body, html {
-    background: #F7F3F7;
+    background: #EDEAE5;
     margin: 0;
     padding: 0;
     width: 80%;
@@ -145,11 +149,31 @@ body {
 </style>
 </head>
 <body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #026670;"></nav>
+    <link rel="stylesheet" href="styles.css">
+    <div id= "head-bar"></div>
+    <div id= "head-bar-name">p r o s f é r o</div>
+
+    <div class="dropdown show">
+      <a class="container" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </a>
+
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #EDEAE5; margin-top: 105px;">
+          <li class="dropdown-header"><b>Menu</b></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="searchartist.html">Search By Artist</a></li>
+      </ul>
+    </div>
+  </nav>
 
 <h2></h2>
 <div style = "position:absolute; margin-left: 33.5%; top:150px;"><a href="about.html"  class="button button1">About prosféro</a></div>
-<div style = "position:absolute; top:350px; left:14%";> <div id= "rectangle"></div></div>
-<div style = "position:absolute; top:350px; left:64%;";> <div id= "rectangle"></div></div>
+<div style = "position:fixed; top:350px; left:14%";> <div id= "rectangle"></div></div>
+<div style = "position:fixed; top:350px; left:64%;";> <div id= "rectangle"></div></div>
 <div class="triangle-down"></div>
 
 <div style = "position: fixed; top:580px; left: 14.87%;"> <div id= "small-rectangle"></div></div>
