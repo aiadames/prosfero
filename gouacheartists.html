@@ -43,10 +43,13 @@
         </thead>
       </table>
 
+            <div id="iframeDisplay" style="margin-top:50px;"></div>  
+
+
 
         <script>
             var commissions = firebase.database().ref("artists");
-            commissions.orderByChild("artistMedium").equalTo('gouache').on('value', function(snapshot){
+            commissions.orderByChild("artistMedium").equalTo('Gouache').on('value', function(snapshot){
                 if(snapshot.exists()){
                     var content = '';
 
@@ -55,14 +58,14 @@
                         var link= data.val().artistLink;
                         var email = data.val().artistEmail;
                         var donationRequired = data.val().donationRequired;
-                        var charities= data.val().artistCharities;
+                        var charity= data.val().artistCharity;
                         var medium = data.val().artistMedium;
-                        content += '<tr>';
+                        content += '<tr' + ' onclick="displayIframe(\''+link+'\')"' + '>';
                         content += '<td>' + artist + '</td>'; //column1
                         content += '<td>' + link + '</td>';//column2
                         content += '<td>' + email + '</td>';//column3
-                        content += '<td>' + donationRequired + '</td>';//column4
-                        content += '<td>' + charities + '</td>';//column5
+                        content += '<td>' + '$'+ donationRequired + '</td>';//column4
+                        content += '<td>' + charity + '</td>';//column5
                         content += '<td>' + medium + '</td>';//column6
                         content += '</tr>';
                     });
@@ -73,7 +76,13 @@
         </script>
 
 
+      <script>
+          function displayIframe(source) {
+              var sour = source;
+              document.getElementById("iframeDisplay", sour).innerHTML = "<iframe src="+sour+" height=\"500\" width=\"100%\" name=\"iframe_a\"></iframe>";
 
+          }
+      </script>
 
       
    </body> 

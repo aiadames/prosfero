@@ -48,8 +48,8 @@ var submitArtist = function () {
   var link = $("#artistLink").val();
   var email = $("#artistEmail").val();
   var donationrequired = $("#donationRequired").val();
-  var acharities = $("#artistCharities").val();
   var amedium = $("input[name='artistMedium']:checked").val();
+  var acharity = $("input[name='artistCharity']:checked").val();
 
   // Push a new recommendation to the database using those values
   arts.push({
@@ -57,8 +57,8 @@ var submitArtist = function () {
     "artistLink": link,
     "artistEmail": email,
     "donationRequired": donationrequired,
-    "artistCharities": acharities,
-    "artistMedium": amedium
+    "artistMedium": amedium,
+    "artistCharity": acharity
   });
 };
 

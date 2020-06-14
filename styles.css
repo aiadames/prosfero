@@ -32,8 +32,8 @@ h3{
 
 #head-bar {
     position: absolute;
-    width: 1440px;
-    height: 92px;
+    width: 126.5%;
+    height: 106px;
     left: 0px;
     top: 0px;
 
@@ -245,7 +245,10 @@ lii {
 
 
 
-
+tr:hover {
+    background-color: #026670;
+    color: #EDEAE5;
+  }
 
 
 
