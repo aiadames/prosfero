@@ -224,7 +224,7 @@ lii {
     width:250px; 
     height: 300px;
     margin-left:20px; 
-    background-color: #f7eba8; 
+    background-color: #f2e4b1; 
     border-radius: 8px;
 }
 
@@ -235,6 +235,12 @@ lii {
     font-size: 18px;
     font-family: ComfortaaBold;
     margin-top: -15px;
+}
+
+.card:hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
 }
 
 
