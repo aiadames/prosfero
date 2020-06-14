@@ -8,7 +8,8 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
     <!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 	<div id= "head-bar"></div>
 	<div id= "head-bar-name">p r o s f é r o</div>
@@ -25,6 +26,9 @@
   <body style="background-color:#EDEAE5;">
     <!-- Load the application script, which will save data to our Firebase app when we click the button. -->
     <script src="application.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #026670;">
 	    <div id= "head-bar-name">p r o s f é r o</div>
@@ -54,40 +58,41 @@
         </div>  
     </nav>
 
-    <div class="container">
+    <div class="container" style="font-family: ComfortaaRegular;">
       <h1>Sign-up for Artists</h1>
-
-      <h3>Form</h3>
+      <br>
       <form id="artistForm">
         <div class="form-group">
           <label for="artistName">Artist</label>
           <input class="form-control" id="artistName" placeholder="Your name">
         </div>
 
+        <br>
         <div class="form-group">
           <label for="artistLink">Artist Portfolio</label>
           <input class="form-control" id="artistLink" placeholder="Link to your website/portfolio">
         </div>
 
+        <br>
         <div class="form-group">
           <label for="artistEmail">Artist Email</label>
           <input class="form-control" id="artistEmail" placeholder="The best email to contact you">
         </div>
 
+        <br>
         <div class="form-group">
-          <label for="donationRequired">Donation Amount</label>
-          <input class="form-control" id="donationRequired" placeholder="Amount of money to be donated per commission">
+          <label for="donationRequired">Donation Amount for Commission</label>
+          <div class="input-group" style="width: 295px;">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" id= "donationRequired" placeholder="Rounded to nearest dollar">
+            <span class="input-group-addon">.00</span>
+          </div>
         </div>
-
-        <div class="form-group">
-          <label for="artistCharities">Supported Charities</label>
-          <input type="form-control" class="form-control" id="artistCharities" placeholder="Choose from Animal Rights, Black Lives Matter, Conservation, Disease and Disorder, Education, Human and Civil Rights, Humanitarian Relief, and Science and Technology">
-        </div>
-
-
+          
+        <br>
         <div class="btn-group" if="artistMedium">
-          <label for="artistMedium">Artist Medium</label>
-          <label class="radio-inline">
+          <label for="artistMedium">Artist Medium:</label>
+          <label class="radio-inline" style="margin-left: 8px;">
             <input type="radio" name="artistMedium" value="watercolor" checked>Watercolor
             </label>
             <label class="radio-inline">
@@ -101,8 +106,41 @@
             </label>
         </div>
 
+        <p></p>
+        <br>
+        <div class="btn-group" if="artistCharity" style="width: 1400px;">
+          <label for="artistMedium">Artist Charity:</label>
+          <label class="radio-inline" style="margin-left: 14px;">
+            <input type="radio" name="artistCharity" value="animal" checked>Animal Rights
+            </label>
+            <label class="radio-inline">
+            <input type="radio" name="artistCharity" value="blm">Black Lives Matter
+            </label>
+            <label class="radio-inline">
+            <input type="radio" name="artistCharity" value="cons">Conservation
+            </label>
+            <label class="radio-inline">
+            <input type="radio" name="artistCharity" value="edu">Education
+            </label>
+            <label class="radio-inline">
+            <input type="radio" name="artistCharity" value="dis">Disease and Disorder
+            </label>
+            <label class="radio-inline">
+            <input type="radio" name="artistCharity" value="rights">Human Rights
+            </label>
+            <label class="radio-inline">
+            <input type="radio" name="artistCharity" value="relief">Humanitarian Relief
+            </label>
+            <label class="radio-inline">
+            <input type="radio" name="artistCharity" value="relief">Science and Technology
+            </label>
+          </label>
+        </div>
+        
+        <p> </p>
 
         <!-- When you click this button, trigger the submit event on this form. -->
+        <br>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
     </div>
