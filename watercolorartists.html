@@ -22,31 +22,7 @@
 
 </head>
   
-<body style="background-color:#EDEAE5;">  
-
-
-
-   <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #026670;">
-	    <div id= "head-bar-name">p r o s f é r o</div>
-        <div class="dropdown show">
-            <a class="container" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </a>
-
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #EDEAE5; margin-top: 105px;">
-                <li class="dropdown-header"><b>Menu</b></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="searchartist.html">Search</a></li>
-            </ul>
-        </div>
-
-        <a href="#" style="font-size: 4em; float: right; color: #EDEAE5;"><i class="fa fa-fw fa-user"></i></a>
-    
-    </nav>
-
+<body style="background-color:#EDEAE5;">
 
     <div id="ref"></div>
 
@@ -67,6 +43,8 @@
         </thead>
       </table>
 
+      <div id="iframeDisplay" style="margin-top:50px;"></div>  
+
 
         <script>
             var commissions = firebase.database().ref("artists");
@@ -81,7 +59,7 @@
                         var donationRequired = data.val().donationRequired;
                         var charities= data.val().artistCharities;
                         var medium = data.val().artistMedium;
-                        content += '<tr>';
+                        content += '<tr' + ' onclick="displayIframe(\''+link+'\')"' + '>';
                         content += '<td>' + artist + '</td>'; //column1
                         content += '<td>' + link + '</td>';//column2
                         content += '<td>' + email + '</td>';//column3
@@ -97,6 +75,13 @@
         </script>
 
 
+        <script>
+        function displayIframe(source) {
+            var sour = source;
+            document.getElementById("iframeDisplay", sour).innerHTML = "<iframe src="+sour+" height=\"500\" width=\"100%\" name=\"iframe_a\"></iframe>";
+
+        }
+    </script>
 
 
       
