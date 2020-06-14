@@ -14,7 +14,7 @@
 
 
 body {
-    background: #F7F3F7;
+    background: #EDEAE5;
 }
 
 h1{
@@ -36,8 +36,8 @@ h3{
     height: 92px;
     left: 0px;
     top: 0px;
-    z-index: 3;
-    background: #44223F;
+
+    background: #026670;
 }
 
 #head-bar-name {
@@ -55,7 +55,7 @@ h3{
     line-height: 71px;
     text-align: center;
 
-    color: #F7F3F7;
+    color: #EDEAE5;
 }
 
 
@@ -70,7 +70,7 @@ h3{
   .bar1, .bar2, .bar3 {
     width: 70px;
     height: 5px;
-    background-color: #F7F3F7;
+    background-color: #EDEAE5;
     margin: 20px 9px;
     transition: 0.4s;
   }
@@ -127,7 +127,7 @@ h3{
     padding: 6px 10px;
     margin-top: 0px;
     margin-right: 16px;
-    background-color: #F7F3F7;
+    background-color: #EDEAE5;
     color: F7#F3F7;
     font-size: 17px;
     border: none;
@@ -148,7 +148,7 @@ h3{
       padding: 0px;
     }
     .navbar input[type=text] {
-      border: 1px solid #F7F3F7;
+      border: 1px solid #EDEAE5;
     }
   }
 
@@ -163,7 +163,7 @@ h3{
     float: left;
     text-align: center;
     padding: 5px;
-    color: #F7F3F7;
+    color: #EDEAE5;
     text-decoration: none;
     font-size: 17px;
   }
