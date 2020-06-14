@@ -29,10 +29,32 @@ var submitCommission = function () {
   // Push a new recommendation to the database using those values
   commissions.push({
     "artist": name,
-    "donation-amount": donation,
+    "donationAmount": donation,
     "link": note
   });
 };
+
+
+
+// Get the single most recent recommendation from the database and
+// update the table with its values. This is called every time the child_added
+// event is triggered on the recommendations Firebase reference, which means
+// that this will update EVEN IF you don't refresh the page. Magic.
+commissions.limitToLast(1).on('child_added', function(childSnapshot) {
+  // Get the recommendation data from the most recent snapshot of data
+  // added to the recommendations list in Firebase
+  commissions = childSnapshot.val();
+
+  // Update the HTML to display the recommendation text
+  $("#artist").html(commissions.artist)
+  $("#donationAmount").html(commissions.donationAmount)
+  $("#link").html(commissions.link)
+});
+
+
+
+
+
 
 // When the window is fully loaded, call this function.
 // Note: because we are attaching an event listener to a particular HTML element

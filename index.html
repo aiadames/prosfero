@@ -6,8 +6,31 @@
 	<link rel="stylesheet" href="styles.css">
 	<div id= "head-bar"></div>
 	<div id= "head-bar-name">p r o s f é r o</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+	$(document).scroll(function () {
+		var y = $(this).scrollTop();
+		if (y < 400) {
+			$('.bottomMenu').fadeIn();
+		} else {
+			$('.bottomMenu').fadeOut();
+		}
+
+	});
+	</script>
 
 <style>
+
+body, html {
+    background: #F7F3F7;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
 .button {
 
 
@@ -42,6 +65,7 @@
 .button1:hover {
   background-color: #EDEAE5;
   color: #EDEAE5;
+
 }
 
 #rectangle {
@@ -91,11 +115,36 @@ background: #EDEAE5;
 	cursor:pointer;
 }
 
+body {
+    height:1600px;
+}
+.bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1000px;
+    border-top: 1px solid #EDEAE5;
+    z-index: 1;
+	background-image: url('images/blm_background3.jpg');
+  	background-size: cover;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #EDEAE5;
+	position:absolute;
+	z-index: 3;
+	margin-left: 48.3%;
+	top: 700px;
+}
 
 </style>
 </head>
 <body>
-
 
 <h2></h2>
 <div style = "position:absolute; margin-left: 33.5%; top:150px;"><a href="about.html"  class="button button1">About prosféro</a></div>
@@ -111,8 +160,14 @@ background: #EDEAE5;
 <div style = "position:absolute; top:370px; left:14.87%";> <div id= "inner-rectangle" onClick="location.href='searchartist.html'"><img class="card-img-top" src="images/paint.svg" alt="Card image" style="width:100%;height:210px;"></div></div>
 <div style = "position:absolute; top:370px; left:64.87%";> <div id= "inner-rectangle" onClick="location.href='searchcharity.html'"><img class="card-img-top" src="images/browser.svg" alt="Card image" style="width:100%;height:210px;"></div></div>
 
-<pre id='data'></pre>
 
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<div class="bottomMenu"></div>
 
 </body>
 </html>
