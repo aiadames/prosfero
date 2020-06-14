@@ -1,5 +1,9 @@
 ## prosféro
 
+https://sohinik.github.io/prosfero/
+
+https://youtu.be/XFlwFLBU-tw
+
 ##INSPIRATION
 
 We were inspired by the current events, which we felt highlighted the generosity of a large percent of the population in their efforts to promote and support important movements and organizations. Specifically, we saw many of our peers creating fundraisers to donate money to organizations such as Black Lives Matter, the NAACP Legal Defense Fund, The Bail Project, and more. As artists ourselves, we strived to contribute to these movements with our talents, creating posters and promotional materials.
