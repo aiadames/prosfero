@@ -25,10 +25,10 @@
 <style>
 
 body, html {
-    background: #EDEAE5;
+    background: #F7F3F7;
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
 }
@@ -70,41 +70,39 @@ body, html {
 
 #rectangle {
     position: absolute;
-width: 332px;
-height: 370px;
-
-background: #FCE181;
+	width: 332px;
+	height: 370px;
+	background: #FCE181;
 }
 
 #small-rectangle {
     position: absolute;
-width: 308px;
-height: 86px;
-
-background: #026670;
+	width: 308px;
+	height: 86px;
+	background: #026670;
 }
 
 #search-text {
     position: absolute;
-width: 209px;
-height: 82px;
+	width: 209px;
+	height: 82px;
 
-font-family: ComfortaaRegular;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 40px;
-display: flex;
-align-items: center;
-text-align: center;
+	font-family: ComfortaaRegular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 40px;
+	display: flex;
+	align-items: center;
+	text-align: center;
 
-color: #EDEAE5;
+	color: #EDEAE5;
 }
 
 #inner-rectangle {
     position: absolute;
-width: 308px;
-height: 212px;
+	width: 308px;
+	height: 212px;
 
 background: #EDEAE5;
 }
@@ -138,7 +136,7 @@ body {
 	border-top: 50px solid #EDEAE5;
 	position:absolute;
 	z-index: 3;
-	margin-left: 48.3%;
+	margin-left: 50%;
 	top: 700px;
 }
 
@@ -146,7 +144,9 @@ body {
 </head>
 
 <body> 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #026670;">
+<div class="container sts-screen-fluid">
+  <nav class="navbar fixed-top navbar-expand-lg" style="background-color: hsla(0, 0, 0, 0); z-index:3;">
+  <div id= "head-bar"></div>
     <div id= "head-bar-name">p r o s f é r o</div>
       <div class="dropdown show">
           <a class="container" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -155,7 +155,7 @@ body {
               <div class="bar3"></div>
           </a>
 
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #EDEAE5; margin-top: 105px;">
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #EDEAE5; margin-top: 95px;">
               <li class="dropdown-header"><b>Menu</b></li>
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
@@ -163,17 +163,18 @@ body {
           </ul>
       </div>
 
-      <a href="#" style="font-size: 4em; float: right; color: #EDEAE5;"><i class="fa fa-fw fa-user"></i></a>
   </nav>
+</div>
 
   <h2></h2>
-  <div style = "position:absolute; margin-left: 33.5%; top:150px;"><a href="about.html"  class="button button1">About prosféro</a></div>
+  <div style = "position:absolute; margin-left: 35%; top:550px; z-index: 3;"><a href="about.html"  class="button button1">about prosféro</a></div>
+  
   <div style = "position:fixed; top:350px; left:14%";> <div id= "rectangle"></div></div>
   <div style = "position:fixed; top:350px; left:64%;";> <div id= "rectangle"></div></div>
   <div class="triangle-down"></div>
 
-  <button type="button" class="btn btn-default btn-lg" style="position: fixed; top:450px; margin-left: 42.5%; margin-bottom: 50px; background-color: #6EAFA9; color: #FFFBF1; font-family: ComfortaaRegular;"><a href="artistsignup.html" style="color:#FFFBF1;">sign up to be an artist</a></button>
-  <button type="button" class="btn btn-default btn-lg" style="position: fixed; top:500px; margin-left: 43%; margin-top: 20px; background-color: #90AA86; color: #FFFBF1; font-family: ComfortaaRegular;"><a href="commission.html" style="color:#FFFBF1;">create a commission</a></button>
+  <button type="button" class="btn btn-default btn-lg" style="position: fixed; top:450px; margin-left: 42.5%; margin-bottom: 50px; background-color: #026670; color: #FFFBF1; font-family: ComfortaaRegular;"><a href="artistsignup.html" style="color:#FFFBF1;">sign up to be an artist</a></button>
+  <button type="button" class="btn btn-default btn-lg" style="position: fixed; top:500px; margin-left: 43%; margin-top: 20px; background-color: #026670; color: #FFFBF1; font-family: ComfortaaRegular;"><a href="commission.html" style="color:#FFFBF1;">create a commission</a></button>
 
   <div style = "position: fixed; top:580px; left: 14.87%;"> <div id= "small-rectangle"></div></div>
   <div style = "position: fixed; top:580px; left: 64.87%;"> <div id= "small-rectangle"></div></div>
