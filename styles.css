@@ -212,4 +212,48 @@ lii {
     background: #1abc9c;
     color: white;
     font-size: 30px;
-  }
+}
+
+.card-img-top {
+    width:65%;
+    height:250px;
+    margin-left: 45px;
+}
+
+.card{
+    width:250px; 
+    margin-left:20px; 
+    background-color: #6EAFA9; 
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #90AA86;
+}
+
+
+.card-title{
+    text-align:center; 
+    color: #000000; 
+    font-size: 18px;
+    font-family: ComfortaaBold;
+    margin-top: -25px;
+}
+
+.card-button{
+    margin-left: 80px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
