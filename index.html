@@ -13,13 +13,23 @@
 	<script>
 	$(document).scroll(function () {
 		var y = $(this).scrollTop();
-		if (y < 400) {
-			$('.bottomMenu').fadeIn();
-		} else {
+		if (y > 400) {
 			$('.bottomMenu').fadeOut();
+		} else {
+			$('.bottomMenu').fadeIn();
 		}
 
 	});
+	</script>
+
+	<script type="text/javascript">
+	$(document).ready(function () {
+		// Handler for .ready() called.
+		$('html, body').animate({
+			scrollTop: $('#head-bar').offset().top
+		}, 'slow');
+	});
+
 	</script>
 
 <style>
@@ -144,6 +154,7 @@ body {
 </head>
 
 <body> 
+<div id="scroll"></div>
 <div class="container sts-screen-fluid">
   <nav class="navbar fixed-top navbar-expand-lg" style="background-color: hsla(0, 0, 0, 0); z-index:3;">
   <div id= "head-bar"></div>
