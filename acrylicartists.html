@@ -22,7 +22,8 @@
 
 </head>
   
-<body style="background-color:#EDEAE5;">  
+<body style="background-color:#EDEAE5;">
+
 
     <div id="ref"></div>
 
@@ -45,8 +46,8 @@
 
 
         <script>
-            var commissions = firebase.database().ref("acrylic");
-            commissions.orderByChild("artistMedium").equalTo('watercolor').on('value', function(snapshot){
+            var commissions = firebase.database().ref("artists");
+            commissions.orderByChild("artistMedium").equalTo('acrylic').on('value', function(snapshot){
                 if(snapshot.exists()){
                     var content = '';
 
