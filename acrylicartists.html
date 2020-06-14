@@ -44,6 +44,8 @@
         </thead>
       </table>
 
+            <div id="iframeDisplay" style="margin-top:50px;"></div>  
+
 
         <script>
             var commissions = firebase.database().ref("artists");
@@ -58,7 +60,7 @@
                         var donationRequired = data.val().donationRequired;
                         var charities= data.val().artistCharities;
                         var medium = data.val().artistMedium;
-                        content += '<tr>';
+                        content += '<tr' + ' onclick="displayIframe(\''+link+'\')"' + '>';
                         content += '<td>' + artist + '</td>'; //column1
                         content += '<td>' + link + '</td>';//column2
                         content += '<td>' + email + '</td>';//column3
@@ -73,7 +75,13 @@
             });
         </script>
 
+        <script>
+              function displayIframe(source) {
+                  var sour = source;
+                  document.getElementById("iframeDisplay", sour).innerHTML = "<iframe src="+sour+" height=\"500\" width=\"100%\" name=\"iframe_a\"></iframe>";
 
+              }
+          </script>
 
 
       
