@@ -49,7 +49,7 @@
 
         <script>
             var commissions = firebase.database().ref("artists");
-            commissions.orderByChild("artistMedium").equalTo('acrylic').on('value', function(snapshot){
+            commissions.orderByChild("artistMedium").equalTo('Acrylic').on('value', function(snapshot){
                 if(snapshot.exists()){
                     var content = '';
                     snapshot.forEach(function(data){
