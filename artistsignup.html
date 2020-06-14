@@ -22,7 +22,7 @@
     <script src="application.js"></script>
 
     <div class="container">
-      <h1>Artist Signup</h1>
+      <h1>Commission for Artists</h1>
 
       <h3>Submission Form</h3>
       <form id="artistForm">
@@ -33,12 +33,12 @@
 
         <div class="form-group">
           <label for="artistLink">Artist Portfolio</label>
-          <input type="form-control" class="form-control" id="artistLink" placeholder="Link to your website/portfolio">
+          <input class="form-control" id="artistLink" placeholder="Link to your website/portfolio">
         </div>
 
         <div class="form-group">
           <label for="artistEmail">Artist Email</label>
-          <input type="form-control" class="form-control" id="artistEmail" placeholder="The best email to contact you">
+          <input class="form-control" id="artistEmail" placeholder="The best email to contact you">
         </div>
 
         <div class="form-group">
@@ -48,26 +48,25 @@
 
         <div class="form-group">
           <label for="artistCharities">Supported Charities</label>
-          <input class="form-control" id="artistCharities" placeholder="Your charities">
+          <input type="form-control" class="form-control" id="artistCharities" placeholder="Your charities">
         </div>
 
-        <div class="form-group">
+
+        <div class="btn-group" if="artistMedium">
           <label for="artistMedium">Artist Medium</label>
           <label class="radio-inline">
-            <input type="radio" name="artistMedium" checked>Watercolor
+            <input type="radio" name="artistMedium" value="watercolor" checked>Watercolor
             </label>
             <label class="radio-inline">
-            <input type="radio" name="artistMedium">Acrylic
+            <input type="radio" name="artistMedium" value="acrylic">Acrylic
             </label>
             <label class="radio-inline">
-            <input type="radio" name="artistMedium">Gouache
+            <input type="radio" name="artistMedium" value="gouache">Gouache
             </label>
             <label class="radio-inline">
-            <input type="radio" name="artistMedium">Oil Paint
+            <input type="radio" name="artistMedium" value="oil">Oil Paint
             </label>
         </div>
-
-        
 
 
         <!-- When you click this button, trigger the submit event on this form. -->

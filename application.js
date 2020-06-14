@@ -34,6 +34,36 @@ var submitCommission = function () {
   });
 };
 
+
+
+
+// Reference to the recommendations object in your Firebase database
+var commissions = firebase.database().ref("artists");
+
+// Save a new recommendation to the database, using the input in the form
+var submitArtist = function () {
+
+  // Get input values from each of the form elements
+  var name = $("#artistName").val();
+  var link = $("#artistLink").val();
+  var email = $("#artistEmail").val();
+  var donationrequired = $("#donationRequired").val();
+  var acharities = $("#artistCharities").val();
+  var amedium = $("input[name='artistMedium']:checked").val();
+
+  // Push a new recommendation to the database using those values
+  commissions.push({
+    "artistName": name,
+    "artistLink": link,
+    "artistEmail": email,
+    "donationRequired": donationrequired,
+    "artistCharities": acharities,
+    "artistMedium": amedium
+  });
+};
+
+
+
 // When the window is fully loaded, call this function.
 // Note: because we are attaching an event listener to a particular HTML element
 // in this function, we can't do that until the HTML element in question has
